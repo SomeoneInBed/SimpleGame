@@ -1,0 +1,11 @@
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\bin\Debug\net8.0\Engine.deps.json
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\bin\Debug\net8.0\Engine.dll
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\bin\Debug\net8.0\Engine.pdb
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.AssemblyInfoInputs.cache
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.AssemblyInfo.cs
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.csproj.CoreCompileInputs.cache
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.dll
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\refint\Engine.dll
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\Engine.pdb
+C:\Users\msazm\source\repos\SimpleGame\ClassLibrary1\obj\Debug\net8.0\ref\Engine.dll
