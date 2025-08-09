@@ -3,48 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|solutionrelative:simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\questcomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\questcomplete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\healingspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\healingspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\simplegame\\simplegame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|solutionrelative:simplegame\\simplegame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|C:\\Users\\msazm\\source\\repos\\SimpleGame\\simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|solutionrelative:simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\livingbeing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\livingbeing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\classlibrary1\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|c:\\users\\msazm\\source\\repos\\simplegame\\simplegame\\simplegame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|solutionrelative:simplegame\\simplegame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,151 +38,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "SimpleGame.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.cs",
+              "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.cs",
+              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.cs [Design]",
+              "RelativeToolTip": "SimpleGame\\SimpleGame.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:25:05.445Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SimpleGame.cs",
               "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.cs",
               "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.cs",
               "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.cs",
               "RelativeToolTip": "SimpleGame\\SimpleGame.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAswGMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAswK4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T23:33:28.889Z",
+              "WhenOpened": "2025-06-02T19:30:43.907Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Weapon.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Weapon.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Weapon.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Weapon.cs",
-              "RelativeToolTip": "ClassLibrary1\\Weapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T22:08:02.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Location.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Location.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Location.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Location.cs",
-              "RelativeToolTip": "ClassLibrary1\\Location.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T00:08:51.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Item.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Item.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Item.cs",
-              "RelativeToolTip": "ClassLibrary1\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T20:21:26.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LivingBeing.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\LivingBeing.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\LivingBeing.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\LivingBeing.cs",
-              "RelativeToolTip": "ClassLibrary1\\LivingBeing.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T20:04:29.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SimpleGame.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.Designer.cs",
-              "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.Designer.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.Designer.cs",
-              "RelativeToolTip": "SimpleGame\\SimpleGame.Designer.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAYwAEBAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T14:21:17Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Quest.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Quest.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Quest.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Quest.cs",
-              "RelativeToolTip": "ClassLibrary1\\Quest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "HealingSpell.cs",
+              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\HealingSpell.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\HealingSpell.cs",
+              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\HealingSpell.cs",
+              "RelativeToolTip": "ClassLibrary1\\HealingSpell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:10:04.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T03:15:34.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Monster.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Monster.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Monster.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Monster.cs",
-              "RelativeToolTip": "ClassLibrary1\\Monster.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\InventoryItem.cs",
+              "RelativeToolTip": "ClassLibrary1\\InventoryItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T00:08:58.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T05:02:13.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\World.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\World.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\World.cs*",
-              "RelativeToolTip": "ClassLibrary1\\World.cs*",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T00:09:08.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Player.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Player.cs",
               "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\Player.cs",
               "RelativeToolTip": "ClassLibrary1\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAADArClrypoiwA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:09:20.722Z"
+              "WhenOpened": "2025-08-08T04:40:23.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuestComplete.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\QuestComplete.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\QuestComplete.cs",
-              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\QuestComplete.cs",
-              "RelativeToolTip": "ClassLibrary1\\QuestComplete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "SimpleGame.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.Designer.cs",
+              "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.Designer.cs",
+              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.Designer.cs",
+              "RelativeToolTip": "SimpleGame\\SimpleGame.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:30:31.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:20:54.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\World.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\World.cs",
+              "ToolTip": "C:\\Users\\msazm\\source\\repos\\SimpleGame\\ClassLibrary1\\World.cs",
+              "RelativeToolTip": "ClassLibrary1\\World.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEIAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:10:31.69Z"
             }
           ]
         }

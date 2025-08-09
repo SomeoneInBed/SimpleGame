@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Engine;
 
 namespace SimpleGame
@@ -6,22 +7,20 @@ namespace SimpleGame
     {
         private const string V = " ";
         private Player _player; //new player + stats
-        private Monster _monster;
+        [SuppressMessage("Style", "IDE0044:Add readonly modifier", Justification = "Monster can be reassigned.")]
+        private Monster? _monster;
         public SimpleGame()
         {
             InitializeComponent();
 
-            _player = new Player(20, 1, 1, 30, 30);
+            _player = new Player(20, 1, 30, 30);
 
             var ironSword = World.ItemByID(World.ITEM_ID_IRON_SWORD);
             _player.InventoryItems.Add(new InventoryItem(ironSword, 1));// Add an iron sword to the player's inventory
 
             //labels
 
-            label1.Text = _player.CurrentHitPoints.ToString();
-            label2.Text = _player.Gold.ToString();
-            label3.Text = _player.ExperiencePoints.ToString();
-            label4.Text = _player.Level.ToString();
+            UpdatePlayerStats();
 
             //set the starting location
             moveTo(World.LocationByID(World.LOCATION_ID_HOME));
@@ -49,29 +48,30 @@ namespace SimpleGame
 
         private void moveTo(Location newLocation)
         {
-            if(newLocation == World.LocationByID(World.LOCATION_ID_HOME))
+            // If player goes home, health is restored
+            if (newLocation == World.LocationByID(World.LOCATION_ID_HOME))
             {
                 _player.CurrentHitPoints = _player.MaxHitPoints;
-                label1.Text = _player.CurrentHitPoints.ToString();
             }
-            //check if item is required to enter
+
+            // Check if item is required to enter
             if (!_player.HasRequiredItemToEnterLocation(newLocation))
             {
                 rtbMessages.Text = "You must have a " + newLocation.ItemRequiredToEnter.Name + " to enter here." + Environment.NewLine;
-                return; //exit the method if player does not have required item
+                return; // Exit the method if player does not have the required item
             }
 
             _player.Location = newLocation;
 
-            btnNorth.Visible = (newLocation.LocationToNorth != null);
-            btnSouth.Visible = (newLocation.LocationToSouth != null);
-            btnEast.Visible = (newLocation.LocationToEast != null);
-            btnWest.Visible = (newLocation.LocationToWest != null);
+            btnNorth.Visible = newLocation.LocationToNorth != null;
+            btnSouth.Visible = newLocation.LocationToSouth != null;
+            btnEast.Visible = newLocation.LocationToEast != null;
+            btnWest.Visible = newLocation.LocationToWest != null;
 
             rtbLocation.Text = newLocation.Name + Environment.NewLine;
             rtbLocation.Text += newLocation.Description + Environment.NewLine;
 
-
+            //check for quest 
             if (newLocation.QuestAvailableHere != null)
             {
                 //see if player has completed quest
@@ -113,7 +113,6 @@ namespace SimpleGame
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardGold.ToString() + " gold" + Environment.NewLine;
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardItem.Name + Environment.NewLine;
                             rtbMessages.Text += Environment.NewLine;
-
                             _player.ExperiencePoints += newLocation.QuestAvailableHere.RewardEXP;
                             _player.Gold += newLocation.QuestAvailableHere.RewardGold;
 
@@ -121,8 +120,7 @@ namespace SimpleGame
                             _player.AddItem(newLocation.QuestAvailableHere.RewardItem);
 
                             _player.MarkQuestComplete(newLocation.QuestAvailableHere);
-                            _player.RemoveQuestItems(newLocation.QuestAvailableHere);
-
+                            
                         }
                     }
                 }
@@ -149,15 +147,14 @@ namespace SimpleGame
                     rtbMessages.Text += Environment.NewLine;
 
                     _player.PlayerQuests.Add(new PlayerQuest(newLocation.QuestAvailableHere, false));
-
                 }
             }
 
             //check for monster
             if (newLocation.MonsterLivingHere != null)
             {
+                //Tell the player that the monster is here
                 rtbMessages.Text += $"You see a {newLocation.MonsterLivingHere.Name} here." + Environment.NewLine;
-
                 Monster standardMonster = World.MonsterByID(newLocation.MonsterLivingHere.ID)!;
 
                 _monster = new Monster(standardMonster.ID, standardMonster.Name, standardMonster.CurrentHitPoints, standardMonster.MaxHitPoints, standardMonster.MaxDamage, standardMonster.RewardEXP, standardMonster.RewardGold);
@@ -167,27 +164,23 @@ namespace SimpleGame
                     _monster.LootTable.Add(li);
                 }
 
-                cboWeapons.Visible = true;
-                cboPotions.Visible = true;
-                btnUseWeapon.Visible = true;
-                btnUsePotion.Visible = true;
+                //give the player their battle options (heal or attack)
+                cboVisible();
             }
 
             else
             {
                 _monster = null;
 
-                cboWeapons.Visible = false;
-                cboPotions.Visible = false;
-                btnUseWeapon.Visible = false;
-                btnUsePotion.Visible = false;
+                cboInvisible();
             }
 
             UpdateInventory();
             UpdateQuestsList();
             UpdateWeaponsList();
             UpdatePotionsList();
-
+            ScrollToBottomOfMessages();
+            UpdatePlayerStats();
         }
         private void btnUseWeapon_Click(Object sender, EventArgs e)
         {
@@ -207,7 +200,6 @@ namespace SimpleGame
 
                 _player.Gold += _monster.RewardGold;
                 rtbMessages.Text += "You receive " + _monster.RewardGold.ToString() + " gold." + Environment.NewLine;
-
                 List<InventoryItem> Loot = new();
 
                 //add items based on drop percentage
@@ -261,8 +253,7 @@ namespace SimpleGame
                 rtbMessages.Text += "The " + _monster.Name + " did " + damageToPlayer.ToString() + " points of damage." + Environment.NewLine;
                 // Subtract damage from player
                 _player.CurrentHitPoints -= damageToPlayer;
-                // Refresh player data in UI
-                label1.Text = _player.CurrentHitPoints.ToString();
+        
                 if (_player.CurrentHitPoints <= 0)
                 {
                     // Display message
@@ -270,7 +261,10 @@ namespace SimpleGame
                     // Move player to "Home"
                     moveTo(World.LocationByID(World.LOCATION_ID_HOME));
                 }
+
             }
+            ScrollToBottomOfMessages();
+            UpdatePlayerStats();
         }
 
         private void btnUsePotion_Click(Object sender, EventArgs e)
@@ -278,7 +272,7 @@ namespace SimpleGame
             // Get the currently selected potion from the combobox
             HealingSpell potion = (HealingSpell)cboPotions.SelectedItem;
             // Add healing amount to the player's current hit points
-            _player.CurrentHitPoints = (_player.CurrentHitPoints + potion.AmountToHeal);
+            _player.CurrentHitPoints += potion.AmountToHeal;
             // CurrentHitPoints cannot exceed player's MaximumHitPoints
             if (_player.CurrentHitPoints > _player.MaxHitPoints)
             {
@@ -310,9 +304,10 @@ namespace SimpleGame
                 moveTo(World.LocationByID(World.LOCATION_ID_HOME));
             }
             // Refresh player data in UI
-            label1.Text = _player.CurrentHitPoints.ToString();
             UpdateInventory();
             UpdatePotionsList();
+            ScrollToBottomOfMessages();
+            UpdatePlayerStats();
         }
 
         private void UpdateInventory()
@@ -398,7 +393,36 @@ namespace SimpleGame
                 cboPotions.SelectedIndex = 0;
             }
         }
-        
+
+        private void ScrollToBottomOfMessages()
+        {
+            rtbMessages.SelectionStart = rtbMessages.Text.Length;
+            rtbMessages.ScrollToCaret();
+        }
+
+        private void UpdatePlayerStats()
+        {
+            // refresh player stats in the UI
+            label1.Text = _player.CurrentHitPoints.ToString();
+            label2.Text = _player.Gold.ToString();
+            label3.Text = _player.ExperiencePoints.ToString();
+            label4.Text = _player.Level.ToString();
+        }
+
+        private void cboVisible()
+        {
+            cboWeapons.Visible = true;
+            cboPotions.Visible = true;
+            btnUseWeapon.Visible = true;
+            btnUsePotion.Visible = true;
+        }
+        private void cboInvisible()
+        {
+            cboWeapons.Visible = false;
+            cboPotions.Visible = false;
+            btnUseWeapon.Visible = false;
+            btnUsePotion.Visible = false;
+        }
     }
 }
 

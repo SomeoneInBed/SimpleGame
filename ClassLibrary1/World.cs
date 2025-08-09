@@ -60,11 +60,11 @@ namespace Engine
 
         public static void PopulateItems()
         {
-            Items.Add(new Weapon(ITEM_ID_IRON_SWORD, "Iron Sword", "Iron Swords", null, 0, 5, null));
+            Items.Add(new Weapon(ITEM_ID_IRON_SWORD, "Iron Sword", "Iron Swords", null, 2, 5, null));
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat Tail", "Rat Tails"));
             Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of Fur", "Pieces of Fur"));
             Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake Fang", "Snake Fangs"));
-            Items.Add(new Item(ITEM_ID_HEALING_POTION, "Healing Potion", "Healing Potions"));
+            Items.Add(new HealingSpell(ITEM_ID_HEALING_POTION, "Healing Potion", "Healing Potions", 10));
             Items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider Silk", "Spider Silks"));
             Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer Pass", "Adventurer Passes"));
             Items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins"));

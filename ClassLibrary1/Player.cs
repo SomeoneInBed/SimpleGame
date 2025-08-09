@@ -1,23 +1,36 @@
 ﻿using System.Net.Security;
 
 namespace Engine
-{
-    public class Player : LivingBeing
     {
-        public int Gold { get; set; }
-        public int ExperiencePoints { get; set; }
-        public int Level { get; set; }
+        public class Player : LivingBeing
+        {
+            public int Gold { get; set; }
+        private int experiencePoints;
+        public int ExperiencePoints 
+        {
+            get { return experiencePoints; }
+            set
+            {
+                experiencePoints = value;
+
+                while (experiencePoints >= 100)
+                {
+                    Level++;
+                    ExperiencePoints -= 100;
+                }
+            }
+        }
+        public int Level { get; set; } = 1;
         public Location Location { get; set; }
         public List<InventoryItem> InventoryItems { get; set; } = [];
         public List<PlayerQuest> PlayerQuests { get; set; } = [];
 
 
-        public Player(int gold, int experiencePoints, int level, int currentHitPoints, int maxHitPoints)
+        public Player(int gold, int experiencePoints, int currentHitPoints, int maxHitPoints)
         : base(currentHitPoints, maxHitPoints)
         {
             Gold = gold;
             ExperiencePoints = experiencePoints;
-            Level = level;
         }
 
         public bool HasRequiredItemToEnterLocation(Location location)

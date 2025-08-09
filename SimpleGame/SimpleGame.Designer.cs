@@ -168,7 +168,7 @@ namespace SimpleGame
             // 
             // btnUseWeapon
             // 
-            btnUseWeapon.Location = new Point(620, 559);
+            btnUseWeapon.Location = new Point(620, 587);
             btnUseWeapon.Name = "btnUseWeapon";
             btnUseWeapon.Size = new Size(62, 34);
             btnUseWeapon.TabIndex = 12;
@@ -178,7 +178,7 @@ namespace SimpleGame
             // 
             // btnUsePotion
             // 
-            btnUsePotion.Location = new Point(620, 593);
+            btnUsePotion.Location = new Point(620, 553);
             btnUsePotion.Name = "btnUsePotion";
             btnUsePotion.Size = new Size(62, 34);
             btnUsePotion.TabIndex = 13;
@@ -223,7 +223,7 @@ namespace SimpleGame
             // Control
             // 
             Control.AutoSize = true;
-            Control.Location = new Point(617, 531);
+            Control.Location = new Point(620, 531);
             Control.Name = "Control";
             Control.Size = new Size(96, 20);
             Control.TabIndex = 18;
@@ -236,7 +236,6 @@ namespace SimpleGame
             dgvInventory.AllowUserToResizeRows = false;
             dgvInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvInventory.EditMode = DataGridViewEditMode.EditProgrammatically;
-            dgvInventory.Enabled = true;
             dgvInventory.EnableHeadersVisualStyles = false;
             dgvInventory.Location = new Point(16, 130);
             dgvInventory.MultiSelect = false;
@@ -255,7 +254,6 @@ namespace SimpleGame
             dgvQuests.AllowUserToResizeRows = false;
             dgvQuests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvQuests.EditMode = DataGridViewEditMode.EditProgrammatically;
-            dgvQuests.Enabled = true;
             dgvQuests.EnableHeadersVisualStyles = false;
             dgvQuests.Location = new Point(16, 245);
             dgvQuests.MultiSelect = false;

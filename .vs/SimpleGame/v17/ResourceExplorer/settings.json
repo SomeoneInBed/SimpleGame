@@ -1,1 +1,16 @@
-{"ShowEmptyProjects":false,"CustomColumnOrderings":{},"ShowValidationErrors":true,"SelectedResourceGroupsByProjectFilePath":{"C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.csproj":["C:\\Users\\msazm\\source\\repos\\SimpleGame\\SimpleGame\\SimpleGame.resx"]},"VisibleColumnKeys":["name","neutral-value"]}
+{
+  "ShowEmptyProjects": false,
+  "SelectedGroups": [],
+  "ExpandedProjects": [],
+  "EnableSpellChecker": true,
+  "ColumnOrder": [
+    "name",
+    "type",
+    "neutral-value",
+    "neutral-comment"
+  ],
+  "VisibleColumnKeys": [
+    "name",
+    "neutral-value"
+  ]
+}
