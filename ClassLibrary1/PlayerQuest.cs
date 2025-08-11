@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    public class PlayerQuest(Quest details, bool isCompleted)
+    public class PlayerQuest(Quest details)
     {
         public Quest Details { get; set; } = details;
-        public bool IsCompleted { get; set; } = isCompleted;
+        public bool IsCompleted { get; set; } 
 
     }
 }

@@ -293,6 +293,7 @@ namespace SimpleGame
             Controls.Add(label1);
             Name = "SimpleGame";
             Text = "My Game";
+            FormClosing += SimpleGame_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dgvInventory).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvQuests).EndInit();
             ResumeLayout(false);

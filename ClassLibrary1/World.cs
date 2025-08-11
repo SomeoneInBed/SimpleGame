@@ -17,15 +17,17 @@ namespace Engine
 
         //items
         public const int ITEM_ID_IRON_SWORD = 1;
-        public const int ITEM_ID_RAT_TAIL= 2;
-        public const int ITEM_ID_PIECE_OF_FUR = 3;
-        public const int ITEM_ID_SNAKE_FANG = 4;
-        public const int ITEM_ID_SNAKESKIN = 5;
-        public const int ITEM_ID_CLUB = 6;
-        public const int ITEM_ID_HEALING_POTION = 7;
-        public const int ITEM_ID_SPIDER_FANG = 8;
-        public const int ITEM_ID_SPIDER_SILK = 9;
-        public const int ITEM_ID_ADVENTURER_PASS = 10;
+        public const int ITEM_ID_DIAMOND_SWORD = 2;
+        public const int ITEM_ID_RAT_TAIL= 3;
+        public const int ITEM_ID_PIECE_OF_FUR = 4;
+        public const int ITEM_ID_SNAKE_FANG = 5;
+        public const int ITEM_ID_SNAKESKIN = 6;
+        public const int ITEM_ID_CLUB = 7;
+        public const int ITEM_ID_HEALING_POTION = 8;
+        public const int ITEM_ID_SPIDER_FANG = 9;
+        public const int ITEM_ID_SPIDER_SILK = 10;
+        public const int ITEM_ID_ADVENTURER_PASS = 11;
+        
 
         //monsters
         public const int MONSTER_ID_RAT = 1;
@@ -61,6 +63,7 @@ namespace Engine
         public static void PopulateItems()
         {
             Items.Add(new Weapon(ITEM_ID_IRON_SWORD, "Iron Sword", "Iron Swords", null, 2, 5, null));
+            Items.Add(new Weapon(ITEM_ID_DIAMOND_SWORD, "Diamond Sword", "Diamond Swords", null, 4, 7, 100));
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat Tail", "Rat Tails"));
             Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of Fur", "Pieces of Fur"));
             Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake Fang", "Snake Fangs"));
@@ -180,7 +183,7 @@ namespace Engine
             Locations.Add(spiderField);
         }
 
-        public static Item ItemByID(int id)
+        public static Item? ItemByID(int id)
         {
             foreach (Item item in Items)
             {
@@ -192,7 +195,7 @@ namespace Engine
             return null;
         }
         
-        public static Monster MonsterByID(int id)
+        public static Monster? MonsterByID(int id)
         {
             foreach(Monster monster in Monsters)
             {
@@ -204,7 +207,7 @@ namespace Engine
             return null;
         }
 
-        public static Quest QuestByID(int id)
+        public static Quest? QuestByID(int id)
         {
             foreach(Quest quest in Quests)
             {
@@ -216,7 +219,7 @@ namespace Engine
             return null;
         }
 
-        public static Location LocationByID(int id)
+        public static Location? LocationByID(int id)
         {
             foreach(Location location in Locations)
             {

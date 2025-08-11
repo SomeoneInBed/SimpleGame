@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using Engine;
+using System.IO;
 
 namespace SimpleGame
 {
@@ -9,21 +10,25 @@ namespace SimpleGame
         private Player _player; //new player + stats
         [SuppressMessage("Style", "IDE0044:Add readonly modifier", Justification = "Monster can be reassigned.")]
         private Monster? _monster;
+        private const string PLAYER_DATA_FILE_NAME = "PlayerData.xml";
         public SimpleGame()
         {
             InitializeComponent();
-
-            _player = new Player(20, 1, 30, 30);
-
-            var ironSword = World.ItemByID(World.ITEM_ID_IRON_SWORD);
-            _player.InventoryItems.Add(new InventoryItem(ironSword, 1));// Add an iron sword to the player's inventory
-
-            //labels
+            if (File.Exists(PLAYER_DATA_FILE_NAME))
+            {
+                //load player data 
+                _player = Player.CreatePlayerFromXmlString(File.ReadAllText(PLAYER_DATA_FILE_NAME));
+            }
+            else
+            {
+                //create a new player
+                _player = Player.CreateDefaultPlayer();
+            }
 
             UpdatePlayerStats();
 
             //set the starting location
-            moveTo(World.LocationByID(World.LOCATION_ID_HOME));
+            moveTo(_player.Location);
 
         }
         private void btnNorth_Click(Object sender, EventArgs e)
@@ -120,7 +125,7 @@ namespace SimpleGame
                             _player.AddItem(newLocation.QuestAvailableHere.RewardItem);
 
                             _player.MarkQuestComplete(newLocation.QuestAvailableHere);
-                            
+
                         }
                     }
                 }
@@ -146,7 +151,7 @@ namespace SimpleGame
                     }
                     rtbMessages.Text += Environment.NewLine;
 
-                    _player.PlayerQuests.Add(new PlayerQuest(newLocation.QuestAvailableHere, false));
+                    _player.PlayerQuests.Add(new PlayerQuest(newLocation.QuestAvailableHere));
                 }
             }
 
@@ -253,7 +258,7 @@ namespace SimpleGame
                 rtbMessages.Text += "The " + _monster.Name + " did " + damageToPlayer.ToString() + " points of damage." + Environment.NewLine;
                 // Subtract damage from player
                 _player.CurrentHitPoints -= damageToPlayer;
-        
+
                 if (_player.CurrentHitPoints <= 0)
                 {
                     // Display message
@@ -344,27 +349,38 @@ namespace SimpleGame
 
         private void UpdateWeaponsList()
         {
-            List<Weapon> weapon = new();
+            List<Weapon> weapons = new();
+
             foreach (InventoryItem i in _player.InventoryItems)
             {
                 if (i.Details is Weapon && i.Quantity > 0)
                 {
-                    weapon.Add((Weapon)i.Details);
+                    weapons.Add((Weapon)i.Details);
                 }
             }
 
-            if (weapon.Count == 0)
+            if (weapons.Count == 0)
             {
-                //player has no weapons so hide the combobox and buttons
+                //no weapons in inventory
                 cboWeapons.Visible = false;
                 btnUseWeapon.Visible = false;
             }
             else
             {
-                cboWeapons.DataSource = weapon;
+                cboWeapons.SelectedIndexChanged -= cboWeapons_SelectedIndexChanged;
+                cboWeapons.DataSource = weapons;
+                cboWeapons.SelectedIndexChanged += cboWeapons_SelectedIndexChanged;
                 cboWeapons.DisplayMember = "Name";
                 cboWeapons.ValueMember = "ID";
-                cboWeapons.SelectedIndex = 0; // Select the first weapon by default
+
+                if (_player.CurrentWeapon != null)
+                {
+                    cboWeapons.SelectedItem = _player.CurrentWeapon;
+                }
+                else
+                {
+                    cboWeapons.SelectedIndex = 0; //select first weapon if no current weapon
+                }
             }
 
         }
@@ -422,6 +438,16 @@ namespace SimpleGame
             cboPotions.Visible = false;
             btnUseWeapon.Visible = false;
             btnUsePotion.Visible = false;
+        }
+
+        private void SimpleGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            File.WriteAllText(PLAYER_DATA_FILE_NAME, _player.ToXmlString());
+        }
+
+        private void cboWeapons_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
         }
     }
 }
