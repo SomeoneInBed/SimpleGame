@@ -1,16 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace Engine
 {
-    public class LivingBeing
+    public class LivingBeing : INotifyPropertyChanged
     {
-        public int CurrentHitPoints { get; set; }
+        private int currentHitPoints;
+        public int CurrentHitPoints { 
+            get { return currentHitPoints; }
+            set 
+            {
+                currentHitPoints = value;
+                OnPropertyChange("CurrentHitPoints");
+            }
+        }
         public int MaxHitPoints { get; set; }
-
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChange(string name)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(name));
+            }
+        }
         public LivingBeing(int currentHitPoints, int maxHitPoints)
         {
             CurrentHitPoints = currentHitPoints;

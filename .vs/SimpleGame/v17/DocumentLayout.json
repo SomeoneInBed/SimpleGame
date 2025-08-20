@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\projects\\simplegame\\classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\projects\\simplegame\\classlibrary1\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|c:\\users\\msazm\\projects\\simplegame\\simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|solutionrelative:simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|c:\\users\\msazm\\projects\\simplegame\\classlibrary1\\playerquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3886DCF1-8B13-4B2F-B81F-0AF4E9ED41C5}|ClassLibrary1\\Engine.csproj|solutionrelative:classlibrary1\\playerquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E79D1AF-9AA2-449B-933B-05302EB788B4}|SimpleGame\\SimpleGame.csproj|C:\\Users\\msazm\\projects\\SimpleGame\\simplegame\\simplegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "SimpleGame.cs [Design]",
               "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\SimpleGame\\SimpleGame.cs",
               "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.cs",
@@ -51,15 +39,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "SimpleGame.cs",
               "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\SimpleGame\\SimpleGame.cs",
               "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.cs",
               "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\SimpleGame\\SimpleGame.cs",
               "RelativeToolTip": "SimpleGame\\SimpleGame.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAADwv30BAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAmwKYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T19:30:43.907Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Player.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Player.cs",
+              "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Player.cs",
+              "RelativeToolTip": "ClassLibrary1\\Player.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAANgBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T19:24:34.68Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -74,58 +76,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Player.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Player.cs",
-              "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Player.cs",
-              "RelativeToolTip": "ClassLibrary1\\Player.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAQwJgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T04:40:23.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Item.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\Item.cs",
-              "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\Item.cs",
-              "RelativeToolTip": "ClassLibrary1\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T19:21:39.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\World.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\World.cs",
-              "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\World.cs*",
-              "RelativeToolTip": "ClassLibrary1\\World.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwEEAAABtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T17:39:33.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerQuest.cs",
-              "DocumentMoniker": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\PlayerQuest.cs",
-              "RelativeDocumentMoniker": "ClassLibrary1\\PlayerQuest.cs",
-              "ToolTip": "C:\\Users\\msazm\\projects\\SimpleGame\\ClassLibrary1\\PlayerQuest.cs",
-              "RelativeToolTip": "ClassLibrary1\\PlayerQuest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T07:23:59.016Z",
-              "EditorCaption": ""
             }
           ]
         }

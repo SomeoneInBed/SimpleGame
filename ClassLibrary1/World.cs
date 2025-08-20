@@ -63,7 +63,7 @@ namespace Engine
         public static void PopulateItems()
         {
             Items.Add(new Weapon(ITEM_ID_IRON_SWORD, "Iron Sword", "Iron Swords", null, 2, 5, null));
-            Items.Add(new Weapon(ITEM_ID_DIAMOND_SWORD, "Diamond Sword", "Diamond Swords", null, 4, 7, 100));
+            Items.Add(new Weapon(ITEM_ID_DIAMOND_SWORD, "Diamond Sword", "Diamond Swords", null, 7, 10, 100));
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat Tail", "Rat Tails"));
             Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of Fur", "Pieces of Fur"));
             Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake Fang", "Snake Fangs"));
@@ -72,6 +72,7 @@ namespace Engine
             Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer Pass", "Adventurer Passes"));
             Items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins"));
             Items.Add(new Item(ITEM_ID_CLUB, "Club", "Clubs"));
+            Items.Add(new(ITEM_ID_SPIDER_FANG, "Spider Fang", "Spider Fangs"));
         }
 
         public static void PopulateMonsters()
@@ -80,7 +81,7 @@ namespace Engine
             rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RAT_TAIL)!, 75, false));
             rat.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PIECE_OF_FUR)!, 60, false));
 
-            Monster snake = new Monster(MONSTER_ID_SNAKE, "Snake", 20, 20, 15, 10, 10);
+            Monster snake = new Monster(MONSTER_ID_SNAKE, "Snake", 20, 20, 10, 20, 15);
             snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKE_FANG)!, 75, false));
             snake.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SNAKESKIN)!, 60, false));
 
@@ -88,7 +89,7 @@ namespace Engine
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG)!, 75, false));
             giantSpider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK)!, 60, false));
 
-            Monster spider = new Monster(MONSTER_ID_SPIDER, "Spider", 25, 30, 20, 25, 25);
+            Monster spider = new Monster(MONSTER_ID_SPIDER, "Spider", 25, 25, 15, 25, 25);
             spider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_SILK)!, 50, false));
             spider.LootTable.Add(new LootItem(ItemByID(ITEM_ID_SPIDER_FANG)!, 75, false));
 
@@ -102,7 +103,7 @@ namespace Engine
         public static void PopulateQuests()
         {
             Quest clearAlchemistGarden = new Quest(QUEST_ID_CLEAR_ALCHEMIST_GARDEN, "Clear the Alchemist's Garden", "Kill rats and find 3 rat tails. You will recieve a healing potion and 30 gold.", 30, 20);
-            clearAlchemistGarden.Completion.Add(new QuestComplete(ItemByID(ITEM_ID_RAT_TAIL), 3));
+            clearAlchemistGarden.Completion.Add(new QuestComplete(ItemByID(ITEM_ID_RAT_TAIL)!, 3));
             clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
 
             Quest clearFarmersField = new Quest(QUEST_ID_CLEAR_FARMERS_FIELD, "Clear the Farmer's Field", 
@@ -111,7 +112,7 @@ namespace Engine
             clearFarmersField.Completion.Add(new QuestComplete(ItemByID(ITEM_ID_SNAKESKIN)!, 10));
             clearFarmersField.RewardItem = ItemByID(ITEM_ID_ADVENTURER_PASS);
 
-            Quest survive = new Quest(QUEST_ID_SURVIVE, "Sudden Quest: Survive.", "You stumbled upon the spider's field. They are now coming.", 100, 100);
+            Quest survive = new Quest(QUEST_ID_SURVIVE, "Sudden Quest: Survive.", "You stumbled upon the spider's field. They are now coming.", 100, 200, ItemByID(ITEM_ID_DIAMOND_SWORD));
             survive.Completion.Add(new QuestComplete(ItemByID(ITEM_ID_SPIDER_FANG)!, 25));
             survive.Completion.Add(new QuestComplete(ItemByID(ITEM_ID_SPIDER_SILK)!, 50));
 
